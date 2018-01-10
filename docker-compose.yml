@@ -1,0 +1,13 @@
+version: '3.2'
+services:
+
+  ngrok:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: "${COMPOSE_PROJECT_NAME}/ngrok"
+    volumes:
+      - "./:/app"
+    ports:
+      - "4040:4040"
+    command: "npm start"

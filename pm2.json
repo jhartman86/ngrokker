@@ -1,0 +1,13 @@
+{
+  "apps": [{
+    "name": "handlers",
+    "script": "./index.js",
+    "node_args": [],
+    "exec_mode": "fork",
+    "instances": 1,
+    "watch": ["./**/*.js"],
+    "ignore_watch": ["node_modules"],
+    "restart_delay": 1000,
+    "vizion": false
+  }]
+}

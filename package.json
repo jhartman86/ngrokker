@@ -1,0 +1,17 @@
+{
+  "name": "ngrokker",
+  "version": "0.0.1",
+  "description": "Test webhook endpoints easily with ngrok",
+  "scripts": {
+    "start": "if [ ! -d \"./node_modules\" ]; then npm install; fi; pm2-docker pm2.json"
+  },
+  "author": "jon hartman",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "4.16.2",
+    "ngrok": "2.2.24",
+    "pm2": "2.5.0",
+    "require-all": "^2.2.0"
+  }
+}
